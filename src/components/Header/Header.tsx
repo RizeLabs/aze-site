@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import AZELogo from "../../assets/AzeLogo.svg";
 
 export const Header = ({isSidebarOpen, setSidebarToggle}: {isSidebarOpen: boolean, setSidebarToggle: (val: boolean) => void}) => {
   // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -23,7 +23,9 @@ export const Header = ({isSidebarOpen, setSidebarToggle}: {isSidebarOpen: boolea
           {/* Content */}
           <div className="flex absolute h-full w-full items-center font-bold text-xl lg:justify-around">
             <div className="lg:w-[17%] w-full font-[1000px] text-3xl z-[100]">
-            <span className="cursor-pointer">AZE</span>
+            <span className="cursor-pointer flex justify-center">
+              <img alt="AZE Logo" className="lg:w-[8rem] w-[6rem]" src={AZELogo} />
+            </span>
             </div>
             <div className="hidden lg:flex w-[58%] justify-center gap-x-14">
               <div className="text-gray-300 font-bold cursor-pointer">Home</div>
